@@ -10,4 +10,13 @@ export default defineConfig({
         }),
         react(),
     ],
+    build: {
+        rollupOptions: {
+            input: {
+                main: 'resources/js/app.tsx',
+                welcome: 'resources/js/Pages/Welcome.tsx',
+                // Aggiungi qui altre pagine...
+            }
+        }
+    }
 });
