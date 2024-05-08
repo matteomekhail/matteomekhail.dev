@@ -7,7 +7,7 @@ import Link from "next/link"
 
 export default function Project() {
     return (
-        <section className="w-full pt-12 md:pt-24 lg:pt-32">
+        <section className="w-full pt-12 md:pt-24 lg:pt-32" id="projects">
             <div className="container mx-auto max-w-7xl px-4 md:px-6">
                 <div className="space-y-4 text-center">
                     <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-blue-300 to-purple-400">My Featured Projects</h2>

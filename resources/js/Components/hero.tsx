@@ -404,9 +404,9 @@ function Hero() {
                     <h2 className="mb-8 text-lg md:text-xl bg-clip-text text-transparent bg-gradient-to-r from-gray-900 dark:from-white via-gray-600 dark:via-gray-200 to-blue-400 dark:to-blue-400">
                         Hey there! Call me Matteo. I enjoy creating web apps and a lot more that require coding skills,<br></br>ones that suit your desires and needs using latest technologies and cleanest design patterns.
                     </h2>
-                    <button className="border-4 bg-transparent text-transparent bg-gradient-to-r from-gray-900 dark:from-white via-gray-600 dark:via-gray-200 to-blue-400 dark:to-blue-400 font-bold py-3 px-8 rounded-lg transition-all duration-500 hover:scale-110 bg-clip-text">
+                    <a href="#projects" className="border-4 bg-transparent text-transparent bg-gradient-to-r from-gray-900 dark:from-white via-gray-600 dark:via-gray-200 to-blue-400 dark:to-blue-400 font-bold py-3 px-8 rounded-lg transition-all duration-500 hover:scale-110 bg-clip-text">
                         View Projects
-                    </button>
+                    </a>
                 </div>
                 <div className="flex-1" style={{ minWidth: isMobile ? '100%' : '50%'}}>
                     <World data={data} globeConfig={globeConfig} />
