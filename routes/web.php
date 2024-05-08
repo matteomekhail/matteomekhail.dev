@@ -7,6 +7,6 @@ Route::get('/', function () {
     return Inertia::render('Welcome');
 });
 
-Route::get('/send-email', 'App\Http\Controllers\EmailController@sendEmail');
+Route::post('/send-email', 'App\Http\Controllers\EmailController@sendEmail');
 
 require __DIR__.'/auth.php';
