@@ -1,6 +1,4 @@
-import { Link, Head } from '@inertiajs/react';
 import { PageProps } from '@/types';
-import Navbar from '@/Components/header';
 import Hero from '@/Components/hero';
 import ServiceDescription from '@/Components/services';
 import TechTools from '@/Components/tools';
