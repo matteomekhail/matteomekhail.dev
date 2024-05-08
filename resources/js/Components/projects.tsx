@@ -60,7 +60,7 @@ export default function Project() {
                                     src="https://ciroabeauty.com/wp-content/uploads/2024/01/CIROA_LOGO-1-removebg-preview.png"
                                     style={{
                                         aspectRatio: "600/400",
-                                        objectFit: "cover",
+                                        objectFit: "scale-down",
                                     }}
                                     width={600}
                                 />
@@ -83,17 +83,50 @@ export default function Project() {
                             </div>
                         </Link>
                     </div>
-                    {/* <div className="group overflow-hidden rounded-lg shadow-md transition-all hover:scale-[1.02] hover:shadow-lg">
-                        <Link className="block" href="https://yourprojecturl.com">
+                    <div className="group overflow-hidden rounded-lg shadow-md transition-all hover:scale-[1.02] hover:shadow-lg">
+                        <Link className="block" href="https://wordpress-405916-4390462.cloudwaysapps.com/">
                             <div className="relative">
                                 <img
                                     alt="Caribbean Pools"
                                     className="w-full h-40 object-cover"
                                     height={400}
-                                    src="https://yourprojectimageurl.com"
+                                    src="https://wordpress-405916-4390462.cloudwaysapps.com/wp-content/uploads/2024/03/Caribbean-pool-logo-1-1536x625-removebg-preview-1.png"
                                     style={{
                                         aspectRatio: "600/400",
-                                        objectFit: "cover",
+                                        objectFit: "scale-down",
+                                    }}
+                                    width={600}
+                                />
+                                <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <div className="text-white text-2xl font-bold">Caribbean Pools</div>
+                                </div>
+                            </div>
+                            <div className="p-4 bg-white dark:bg-black">
+                                <h3 className="text-lg font-semibold group-hover:underline">Caribbean Pools</h3>
+                                <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">Elevate Your Home with a Bespoke Caribbean Pool</p>
+                                <div className="mt-4">
+                                    <Link
+                                        className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
+                                        href="https://wordpress-405916-4390462.cloudwaysapps.com/"
+                                    >
+                                        View Project
+                                        <ArrowRightIcon className="w-4 h-4" />
+                                    </Link>
+                                </div>
+                            </div>
+                        </Link>
+                    </div>
+                    <div className="group overflow-hidden rounded-lg shadow-md transition-all hover:scale-[1.02] hover:shadow-lg">
+                        <Link className="block" href="https://wordpress-405916-4532643.cloudwaysapps.com/">
+                            <div className="relative">
+                                <img
+                                    alt="Oak Tree Industrial"
+                                    className="w-full h-40 object-cover"
+                                    height={400}
+                                    src="https://wordpress-405916-4532643.cloudwaysapps.com/wp-content/uploads/2024/05/LOGO_CORRECT-removebg-preview.png"
+                                    style={{
+                                        aspectRatio: "600/400",
+                                        objectFit: "scale-down",
                                     }}
                                     width={600}
                                 />
@@ -102,12 +135,12 @@ export default function Project() {
                                 </div>
                             </div>
                             <div className="p-4 bg-white dark:bg-black">
-                                <h3 className="text-lg font-semibold group-hover:underline">Your Project Name</h3>
-                                <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">Your project description goes here.</p>
+                                <h3 className="text-lg font-semibold group-hover:underline">Oak Tree Industrial</h3>
+                                <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">Unlock the Potential of Strategic Industrial Space at Oak Tree Industrial Estate</p>
                                 <div className="mt-4">
                                     <Link
                                         className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
-                                        href="https://yourprojecturl.com"
+                                        href="https://wordpress-405916-4532643.cloudwaysapps.com/"
                                     >
                                         View Project
                                         <ArrowRightIcon className="w-4 h-4" />
@@ -115,7 +148,7 @@ export default function Project() {
                                 </div>
                             </div>
                         </Link>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </section>
