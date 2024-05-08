@@ -10,4 +10,5 @@ Route::get('/', function () {
 
 Route::post('/send-email', [EmailController::class, 'sendEmail']);
 
+
 require __DIR__.'/auth.php';
