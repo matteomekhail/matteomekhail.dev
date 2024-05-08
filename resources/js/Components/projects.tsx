@@ -26,7 +26,7 @@ export default function Project() {
                                     src="./img/logo.webp"
                                     style={{
                                         aspectRatio: "600/400",
-                                        objectFit: "cover",
+                                        objectFit: "scale-down",
                                     }}
                                     width={600}
                                 />
@@ -83,6 +83,39 @@ export default function Project() {
                             </div>
                         </Link>
                     </div>
+                    {/* <div className="group overflow-hidden rounded-lg shadow-md transition-all hover:scale-[1.02] hover:shadow-lg">
+                        <Link className="block" href="https://yourprojecturl.com">
+                            <div className="relative">
+                                <img
+                                    alt="Caribbean Pools"
+                                    className="w-full h-40 object-cover"
+                                    height={400}
+                                    src="https://yourprojectimageurl.com"
+                                    style={{
+                                        aspectRatio: "600/400",
+                                        objectFit: "cover",
+                                    }}
+                                    width={600}
+                                />
+                                <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                    <div className="text-white text-2xl font-bold">View Project</div>
+                                </div>
+                            </div>
+                            <div className="p-4 bg-white dark:bg-black">
+                                <h3 className="text-lg font-semibold group-hover:underline">Your Project Name</h3>
+                                <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">Your project description goes here.</p>
+                                <div className="mt-4">
+                                    <Link
+                                        className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
+                                        href="https://yourprojecturl.com"
+                                    >
+                                        View Project
+                                        <ArrowRightIcon className="w-4 h-4" />
+                                    </Link>
+                                </div>
+                            </div>
+                        </Link>
+                    </div> */}
                 </div>
             </div>
         </section>

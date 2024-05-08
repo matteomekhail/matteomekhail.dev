@@ -1,12 +1,19 @@
-import React, { ChangeEvent, FormEvent, useState, } from 'react';
+import React, { ChangeEvent, FormEvent, useState, useEffect } from 'react';
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import { Button } from "./ui/button";
 import { Inertia } from '@inertiajs/inertia';
-
+import SmoothScroll from 'smooth-scroll';
 
 export default function Quote(props: any) {
+
+    useEffect(() => {
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 800,
+            speedAsDuration: true
+        });
+    }, []);
 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
@@ -27,7 +34,7 @@ export default function Quote(props: any) {
     }
 
     return (
-        <section className="w-full py-12 md:py-10 lg:pt-20 flex justify-center">
+        <section className="w-full py-12 md:py-10 lg:pt-20 flex justify-center" id="quote">
             <div className="container px-4 md:px-6">
                 <div className="mx-auto max-w-xl space-y-6">
                     <div className="space-y-2 text-center">

@@ -14,8 +14,6 @@ class EmailController extends Controller
         $company = $request->input('company');
         $project = $request->input('project');
 
-        $resend = Resend::client('re_7vPPwfK3_Q1a5vkp5yzPaxDRVwEsXD5XC');
-
         Resend::emails()->send([
             'from' => 'Acme <onboarding@resend.dev>',
             'to' => ['matteomekhail04@gmail.com'], // invia sempre all'indirizzo email del tuo account
