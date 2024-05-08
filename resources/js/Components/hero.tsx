@@ -3,6 +3,7 @@ import { Link, Head } from '@inertiajs/react';
 import { PageProps } from '@/types';
 import { World, GlobeConfig } from '@/Components/ui/globe'; // Assicurati che il percorso sia corretto
 import { SparklesCore } from './ui/sparkles';
+import { useMediaQuery } from 'react-responsive';
 
 const globeConfig = {
     pointSize: 4,
@@ -391,13 +392,12 @@ const data = [
 ];
 
 function Hero() {
+    const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
+
     return (
-        <div className="text-white relative px-8 sm:px-0 mb-60" style={{
-            backgroundSize: 'cover',
-            backgroundPosition: 'center'
-        }} >
-            <div className="container mx-auto h-full flex flex-col sm:flex-row item-top mt-48 sm:mt-80 w-full sm:pt-0">
-                <div className="flex-1 lg:mt-40">
+        <div className="text-white relative px-8 sm:px-0">
+            <div className="container mx-auto h-full flex flex-col sm:flex-row item-top mt-20 w-full sm:pt-0">
+                <div className="flex-1 lg:mt-10">
                     <h1 className="text-6xl md:text-8xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 dark:from-white via-gray-600 dark:via-gray-200 to-blue-400 dark:to-blue-400">
                         Break the code barrier
                     </h1>
@@ -408,7 +408,7 @@ function Hero() {
                         View Projects
                     </button>
                 </div>
-                <div className="flex-1" style={{ minWidth: '50%', minHeight: '500px' }}>
+                <div className="flex-1" style={{ minWidth: isMobile ? '100%' : '50%'}}>
                     <World data={data} globeConfig={globeConfig} />
                 </div>
             </div>
