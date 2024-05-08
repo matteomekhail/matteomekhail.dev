@@ -7,7 +7,7 @@ import Project from '@/Components/projects';
 import Quote from '@/Components/quote';
 import Footer from '@/Components/footer';
 
-export default function Welcome({ auth, laravelVersion, phpVersion }: PageProps<{ laravelVersion: string, phpVersion: string }>) {
+export default function Welcome() {
     return (
         <>
             <NavbarDemo />
