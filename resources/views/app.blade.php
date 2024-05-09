@@ -7,7 +7,7 @@
 
     <title inertia>{{ config('app.name', 'Matteo Mekhail Portfolio') }}</title>
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VZGT4XLHTN"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-SGQGJ129MX"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
 
@@ -16,8 +16,7 @@
         }
         gtag('js', new Date());
 
-        gtag('config', 'G-VZGT4XLHTN');
-    </script>
+        gtag('config', 'G-SGQGJ129MX');
     </script>
 
     <!-- Fonts -->
