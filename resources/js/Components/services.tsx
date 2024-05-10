@@ -56,7 +56,7 @@ const ServiceCard: React.FC<ServiceCardProps & { index: number }> = ({ title, de
 };
 
 const ServicesSection: React.FC = () => (
-    <div className="text-center py-12 px-4">
+    <div className="text-center py-12 px-4" id="services">
         <h2 className="text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 via-blue-300 to-purple-400">You're Safe And in Good Hands</h2>
         <p className="text-xl text-gray-800 dark:text-gray-300 mb-10">Customer satisfaction comes first, and in order to do that I decided to pickup skills and principles to provide quality service.</p>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 ">
