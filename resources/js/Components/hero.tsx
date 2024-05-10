@@ -423,7 +423,7 @@ function Hero() {
                             </Link>
                         </div>
                     </div>
-                    <div className="h-80">
+                    <div className="sm:h-60 md:h-80 ">
                         <World data={data} globeConfig={globeConfig} />
                     </div>
                     <SparklesCore
