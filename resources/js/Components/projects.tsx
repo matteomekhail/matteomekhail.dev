@@ -90,7 +90,7 @@ export default function Project() {
                                     alt="Caribbean Pools"
                                     className="w-full h-40 object-cover"
                                     height={400}
-                                    src="https://wordpress-405916-4390462.cloudwaysapps.com/wp-content/uploads/2024/03/Caribbean-pool-logo-1-1536x625-removebg-preview-1.png"
+                                    src="https://caribbeanpools.net.au/wp-content/uploads/2024/03/Caribbean-pool-logo-1-1536x625-removebg-preview-1.png"
                                     style={{
                                         aspectRatio: "600/400",
                                         objectFit: "scale-down",
