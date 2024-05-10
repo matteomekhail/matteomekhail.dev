@@ -400,7 +400,7 @@ function Hero() {
                 <div className="container px-4 md:px-6">
                     <div className="flex flex-col items-center space-y-6">
                         <div className="space-y-4 text-center">
-                            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl sm:mt-48 lg:text-7xl xl:text-8xl bg-clip-text text-transparent bg-gradient-to-r from-gray-900 dark:from-white via-blue-400 dark:via-blue-400 to-purple-400 dark:to-purple-400">
+                            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl sm:mt-52 lg:text-7xl xl:text-8xl bg-clip-text text-transparent bg-gradient-to-r from-gray-900 dark:from-white via-blue-400 dark:via-blue-400 to-purple-400 dark:to-purple-400">
                                 Unleash Your Web Development Potential
                             </h1>
                             <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
@@ -423,7 +423,7 @@ function Hero() {
                             </Link>
                         </div>
                     </div>
-                    <div className="h-96">
+                    <div className="h-80">
                         <World data={data} globeConfig={globeConfig} />
                     </div>
                     <SparklesCore
