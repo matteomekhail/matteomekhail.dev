@@ -7,7 +7,7 @@ import { useMediaQuery } from 'react-responsive';
 
 const globeConfig = {
     pointSize: 4,
-    globeColor: "#223344", // Un colore più scuro per il globo
+    globeColor: "#456688", // Un colore più scuro per il globo
     showAtmosphere: true,
     atmosphereColor: "#c084fc", // Un blu chiaro per l'atmosfera
     atmosphereAltitude: 0.15,
@@ -423,13 +423,15 @@ function Hero() {
                             </Link>
                         </div>
                     </div>
-                    <div className="sm:h-60 md:h-80 ">
-                        <World data={data} globeConfig={globeConfig} />
+                    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                        <div style={{ height: '350px', display: 'inline-block' }}>
+                            <World data={data} globeConfig={globeConfig} />
+                        </div>
                     </div>
                     <SparklesCore
                         id="tsparticlesfullpage"
                         background="transparent"
-                        minSize={0.6}
+                        minSize={0.8}
                         maxSize={1.6}
                         particleDensity={250}
                         className="w-full h-full"
