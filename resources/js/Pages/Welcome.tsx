@@ -6,7 +6,6 @@ import { NavbarDemo } from '@/Components/navbar';
 import Project from '@/Components/projects';
 import Quote from '@/Components/quote';
 import Footer from '@/Components/footer';
-
 export default function Welcome() {
     return (
         <>

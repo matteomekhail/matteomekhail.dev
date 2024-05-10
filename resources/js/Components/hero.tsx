@@ -395,33 +395,50 @@ function Hero() {
     const isMobile = useMediaQuery({ query: '(max-width: 767px)' });
 
     return (
-        <div className="text-white relative px-8 sm:px-0">
-            <div className="container mx-auto h-full flex flex-col sm:flex-row item-top mt-20 w-full sm:pt-0">
-                <div className="flex-1 lg:mt-10">
-                    <h1 className="text-6xl md:text-8xl font-extrabold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 dark:from-white via-gray-600 dark:via-gray-200 to-blue-400 dark:to-blue-400">
-                        Break the code barrier
-                    </h1>
-                    <h2 className="mb-8 text-lg md:text-xl bg-clip-text text-transparent bg-gradient-to-r from-gray-900 dark:from-white via-gray-600 dark:via-gray-200 to-blue-400 dark:to-blue-400">
-                        Hey there! Call me Matteo. I enjoy creating web apps and a lot more that require coding skills,<br></br>ones that suit your desires and needs using latest technologies and cleanest design patterns.
-                    </h2>
-                    <a href="#projects" className="border-4 bg-transparent text-transparent bg-gradient-to-r from-gray-900 dark:from-white via-gray-600 dark:via-gray-200 to-blue-400 dark:to-blue-400 font-bold py-3 px-8 rounded-lg transition-all duration-500 hover:scale-110 bg-clip-text">
-                        View Projects
-                    </a>
+        <>
+            <section className="w-full h-screen flex items-center justify-center">
+                <div className="container px-4 md:px-6">
+                    <div className="flex flex-col items-center space-y-6">
+                        <div className="space-y-4 text-center">
+                            <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl bg-clip-text text-transparent bg-gradient-to-r from-gray-900 dark:from-white via-blue-400 dark:via-blue-400 to-purple-400 dark:to-purple-400">
+                                Unleash Your Web Development Potential
+                            </h1>
+                            <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
+                                Discover our comprehensive web development services, tailored to elevate your online presence and drive
+                                your business forward.
+                            </p>
+                        </div>
+                        <div className="flex flex-col gap-4 sm:flex-row">
+                            <Link
+                                className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
+                                href="#services"
+                            >
+                                Explore Our Services
+                            </Link>
+                            <Link
+                                className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 "
+                                href="#quote"
+                            >
+                                Contact Us
+                            </Link>
+                        </div>
+                    </div>
+                    <div className="h-96">
+                        <World data={data} globeConfig={globeConfig} />
+                    </div>
+                    <SparklesCore
+                        id="tsparticlesfullpage"
+                        background="transparent"
+                        minSize={0.6}
+                        maxSize={1.6}
+                        particleDensity={250}
+                        className="w-full h-full"
+                        particleColor="#60a5fa"
+                    />
                 </div>
-                <div className="flex-1" style={{ minWidth: isMobile ? '100%' : '50%'}}>
-                    <World data={data} globeConfig={globeConfig} />
-                </div>
-            </div>
-            <SparklesCore
-                id="tsparticlesfullpage"
-                background="transparent"
-                minSize={0.6}
-                maxSize={1.6}
-                particleDensity={250}
-                className="w-full h-full"
-                particleColor="#60a5fa"
-            />
-        </div>
+            </section>
+
+        </>
     );
 }
 
