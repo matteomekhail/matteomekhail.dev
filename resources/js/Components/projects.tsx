@@ -84,7 +84,7 @@ export default function Project() {
                         </Link>
                     </div>
                     <div className="group overflow-hidden rounded-lg shadow-md transition-all hover:scale-[1.02] hover:shadow-lg">
-                        <Link className="block" href="https://wordpress-405916-4390462.cloudwaysapps.com/">
+                        <Link className="block" href="https://caribbeanpools.net.au/">
                             <div className="relative">
                                 <img
                                     alt="Caribbean Pools"
@@ -107,7 +107,7 @@ export default function Project() {
                                 <div className="mt-4">
                                     <Link
                                         className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
-                                        href="https://wordpress-405916-4390462.cloudwaysapps.com/"
+                                        href="https://caribbeanpools.net.au/"
                                     >
                                         View Project
                                         <ArrowRightIcon className="w-4 h-4" />
