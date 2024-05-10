@@ -26,7 +26,7 @@ const TechTools: React.FC = () => {
     ];
     const AITools: Tool[] = [
         { name: 'ChatGPT', icon: '/svg/ChatGPT.svg', style: 'text-indigo-500' },
-        { name: 'Stability.AI', icon: '/svg/Stability.png', style: 'text-black' },
+        { name: 'Stability.AI', icon: '/svg/stability.svg', style: 'text-black' },
         { name: 'Midjourney', icon: '/svg/midjourney.svg', style: 'text-black' },
     ];
 
