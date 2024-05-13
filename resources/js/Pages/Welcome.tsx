@@ -11,9 +11,9 @@ export default function Welcome() {
         <>
             <NavbarDemo />
             <Hero />
+            <Project />
             <ServiceDescription />
             <TechTools />
-            <Project />
             <Quote />
             <Footer />
         </>
