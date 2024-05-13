@@ -396,7 +396,7 @@ function Hero() {
 
     return (
         <>
-            <section className="w-full h-screen mt-20 flex items-center justify-center">
+            <section className="w-full h-screen mt-16 flex items-center justify-center">
                 <div className="container px-4 md:px-6">
                     <div className="flex flex-col items-center space-y-6">
                         <div className="space-y-4 text-center">
