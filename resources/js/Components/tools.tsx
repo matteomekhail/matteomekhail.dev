@@ -114,7 +114,7 @@ const TechTools: React.FC = () => {
                         <div
                             ref={el => toolRefs.current[index + tools.length] = el}
                             key={tool.name}
-                            className={`p-6 max-w-sm mx-2 rounded-xl flex flex-col items-center space-y-4 ${index >= selectedTools.length - 2 ? 'mt-4' : ''}`}
+                            className={`p-6 max-w-sm mx-auto rounded-xl flex flex-col items-center space-y-4 ${index >= selectedTools.length - 2 ? 'mt-4' : ''}`}
                             style={{
                                 opacity: 0,
                                 animation: isVisible[index + tools.length] ? `fadeIn 1s ease forwards` : 'none'
@@ -134,7 +134,7 @@ const TechTools: React.FC = () => {
                         <div
                             ref={el => toolRefs.current[index + tools.length + selectedTools.length] = el}
                             key={tool.name}
-                            className={`p-6 max-w-sm mx-2 rounded-xl flex flex-col items-center space-y-4 ${index >= AITools.length - 2 ? 'mt-4' : ''}`}
+                            className={`p-6 max-w-sm mx-auto rounded-xl flex flex-col items-center space-y-4 ${index >= AITools.length - 2 ? 'mt-4' : ''}`}
                             style={{
                                 opacity: 0,
                                 animation: isVisible[index + tools.length + selectedTools.length] ? `fadeIn 1s ease forwards` : 'none'

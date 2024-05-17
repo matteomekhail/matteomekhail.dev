@@ -401,11 +401,10 @@ function Hero() {
                     <div className="flex flex-col items-center space-y-6">
                         <div className="space-y-4 text-center">
                             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl sm:mt-40 lg:text-7xl xl:text-8xl bg-clip-text text-transparent bg-gradient-to-r from-gray-900 dark:from-white via-blue-400 dark:via-blue-400 to-purple-400 dark:to-purple-400">
-                                Unleash Your Web Development Potential
+                                Showcasing Creativity and Innovation
                             </h1>
                             <p className="mx-auto max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400">
-                                Discover our comprehensive web development services, tailored to elevate your online presence and drive
-                                your business forward.
+                                Dive into my portfolio to explore a diverse range of projects, from design to development, each crafted with passion and precision.
                             </p>
                         </div>
                         <div className="flex flex-col gap-4 sm:flex-row">
@@ -413,17 +412,17 @@ function Hero() {
                                 className="inline-flex h-10 items-center justify-center rounded-md bg-gray-900 px-8 text-sm font-medium text-gray-50 shadow transition-colors hover:bg-gray-900/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90 dark:focus-visible:ring-gray-300"
                                 href="#services"
                             >
-                                Explore Our Services
+                                Explore My Services
                             </Link>
                             <Link
                                 className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 "
                                 href="#quote"
                             >
-                                Contact Us
+                                Get In Touch
                             </Link>
                         </div>
                     </div>
-                    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
+                    <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <div style={{ height: '350px', display: 'inline-block' }}>
                             <World data={data} globeConfig={globeConfig} />
                         </div>

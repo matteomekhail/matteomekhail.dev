@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
 import { cn } from "@/utils/cn";
 
+
 export function NavbarDemo() {
     return (
         <div className="relative w-full flex items-center justify-center">
@@ -10,6 +11,26 @@ export function NavbarDemo() {
         </div>
     );
 }
+
+function changeTheme(theme: string = 'system') {
+    if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+    } else if (theme === 'light') {
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+    } else {
+        // Per il tema del sistema, controlla le preferenze del sistema operativo dell'utente
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+        localStorage.setItem('theme', 'system');
+    }
+}
+
+changeTheme();
 
 function Navbar({ className }: { className?: string }) {
     const [active, setActive] = useState<string | null>(null);
@@ -20,10 +41,12 @@ function Navbar({ className }: { className?: string }) {
             <Menu setActive={setActive}>
                 <MenuItem setActive={setActive} active={active} item="Services">
                     <div className="flex flex-col space-y-4 text-sm">
-                        <HoveredLink href="#" onClick={(event :any) => event.preventDefault()}>Web Development</HoveredLink>
-                        <HoveredLink href="#" onClick={(event :any) => event.preventDefault()}>Interface Design</HoveredLink>
-                        <HoveredLink href="#" onClick={(event :any) => event.preventDefault()}>Search Engine Optimization</HoveredLink>
-                        <HoveredLink href="#" onClick={(event :any) => event.preventDefault()}>Branding</HoveredLink>
+                        <HoveredLink href="#" onClick={(event: any) => event.preventDefault()}>Web Development</HoveredLink>
+                        <HoveredLink href="#" onClick={(event: any) => event.preventDefault()}>Mobile App Development</HoveredLink>
+                        <HoveredLink href="#" onClick={(event: any) => event.preventDefault()}>Ecommerce Development</HoveredLink>
+                        <HoveredLink href="#" onClick={(event: any) => event.preventDefault()}>SaaS Development</HoveredLink>
+                        <HoveredLink href="#" onClick={(event: any) => event.preventDefault()}>Technical assistance and consulting</HoveredLink>
+                        <HoveredLink href="#" onClick={(event: any) => event.preventDefault()}>Search Engine Optimization (SEO)</HoveredLink>
                     </div>
                 </MenuItem>
                 {/* <MenuItem setActive={setActive} active={active} item="Products">
@@ -59,7 +82,15 @@ function Navbar({ className }: { className?: string }) {
                         <HoveredLink href="#quote">Get a quote</HoveredLink>
                     </div>
                 </MenuItem>
+                <MenuItem setActive={setActive} active={active} item="Theme">
+                    <div className="flex flex-col space-y-4 text-sm">
+                        <HoveredLink href="#" onClick={() => { changeTheme('dark'); }}>Dark</HoveredLink>
+                        <HoveredLink href="#" onClick={() => { changeTheme('light'); }}>Light</HoveredLink>
+                        <HoveredLink href="#" onClick={() => { changeTheme('system'); }}>System</HoveredLink>
+                    </div>
+                </MenuItem>
             </Menu>
+
         </div>
     );
 }

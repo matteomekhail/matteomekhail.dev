@@ -3,7 +3,7 @@
  * @see https://v0.dev/t/s2GOOKsmAag
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
-import Link from "next/link"
+import { WobbleCard } from "./ui/wobble-card"
 
 export default function Project() {
     return (
@@ -15,162 +15,58 @@ export default function Project() {
                         Check out some of our latest and greatest projects that showcase our design and development expertise.
                     </p>
                 </div>
-                <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2 mt-12 text-gray-800 dark:text-gray-300">
-                    <div className="group overflow-hidden rounded-lg shadow-md transition-all hover:scale-[1.02] hover:shadow-lg">
-                        <Link className="block" href="https://fitfoodco.au">
-                            <div className="relative">
-                                <img
-                                    alt="Project 1"
-                                    className="w-full h-40 object-cover"
-                                    height={400}
-                                    src="./img/logo.webp"
-                                    style={{
-                                        aspectRatio: "600/400",
-                                        objectFit: "scale-down",
-                                    }}
-                                    width={600}
-                                />
-                                <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                                    <div className="text-white text-2xl font-bold">View Project</div>
-                                </div>
-                            </div>
-                            <div className="p-4 bg-white dark:bg-black">
-                                <h3 className="text-lg font-semibold group-hover:underline">FitFoodCo</h3>
-                                <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">Fuel your fitness journey with expertly crafted, nutritious meals
-                                    where health meets taste!</p>
-                                <div className="mt-4">
-                                    <Link
-                                        className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
-                                        href="https://fitfoodco.au"
-                                    >
-                                        View Project
-                                        <ArrowRightIcon className="w-4 h-4" />
-                                    </Link>
-                                </div>
-                            </div>
-                        </Link>
+            </div>
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 max-w-7xl mx-auto w-full mt-14">
+                <WobbleCard
+                    containerClassName="col-span-1 lg:col-span-2 h-auto bg-pink-800 min-h-[500px] lg:min-h-[300px]"
+                    className=""
+                    onClick={() => window.open("https://fitfoodco.au", "_blank")}
+                >
+                    <div className="max-w-xs">
+                        <h2 className="text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                            FitFoodCo
+                        </h2>
+                        <h3 className="text-left text-balance text-base md:text-xl lg:text-2xl font-semibold tracking-[-0.015em] text-white">Fuel Your Energy with Healthy and Delicious Meals!</h3>
+                        <p className="mt-4 text-left text-base/6 text-neutral-200">
+                            Experience the perfect blend of health and taste with our expertly crafted meals. Try FitFoodCo and revolutionize your eating habits.
+                        </p>
                     </div>
-                    <div className="group overflow-hidden rounded-lg shadow-md transition-all hover:scale-[1.02] hover:shadow-lg">
-                        <Link className="block" href="https://ciroabeauty.com">
-                            <div className="relative">
-                                <img
-                                    alt="Project 2"
-                                    className="w-full h-40 object-cover bg-[#EEC9CD]"
-                                    height={400}
-                                    src="https://ciroabeauty.com/wp-content/uploads/2024/01/CIROA_LOGO-1-removebg-preview.png"
-                                    style={{
-                                        aspectRatio: "600/400",
-                                        objectFit: "scale-down",
-                                    }}
-                                    width={600}
-                                />
-                                <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity ">
-                                    <div className="text-white text-2xl font-bold">View Project</div>
-                                </div>
-                            </div>
-                            <div className="p-4 bg-white dark:bg-black">
-                                <h3 className="text-lg font-semibold group-hover:underline">Ciroa</h3>
-                                <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">Elevate your home and self-care routine with beautifully crafted collections.</p>
-                                <div className="mt-4">
-                                    <Link
-                                        className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
-                                        href="https://ciroabeauty.com"
-                                    >
-                                        View Project
-                                        <ArrowRightIcon className="w-4 h-4" />
-                                    </Link>
-                                </div>
-                            </div>
-                        </Link>
+                    <img
+                        src="/img/fitfoodcoWebsite.png"
+                        width={500}
+                        height={500}
+                        alt="FitFoodco Image"
+                        className="absolute -right-4 lg:-right-[40%] -bottom-20 object-contain rounded-2xl"
+                    />
+                </WobbleCard>
+                <WobbleCard containerClassName="col-span-1 min-h-[300px]">
+                    <h2 className="max-w-80 text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                        Discover My Creative Projects
+                    </h2>
+                    <p className="mt-4 max-w-[26rem] text-left text-base/6 text-neutral-200">
+                        Explore a curated selection of my best work, showcasing innovation, creativity, and dedication across various fields and disciplines.
+                    </p>
+                </WobbleCard>
+                <WobbleCard containerClassName="col-span-1 lg:col-span-3 bg-blue-900 min-h-[500px] lg:min-h-[600px] xl:min-h-[300px]" onClick={() => window.open("https://caribbeanpools.net.au", "_blank")}
+                >
+                    <div className="max-w-sm">
+                        <h2 className="max-w-sm md:max-w-lg  text-left text-balance text-base md:text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
+                            Caribbean Pools
+                        </h2>
+                        <h3 className="text-left text-balance text-base md:text-xl lg:text-2xl font-semibold tracking-[-0.015em] text-white">Transform Your Home with a Bespoke Caribbean Pool!</h3>
+                        <p className="mt-4 max-w-[26rem] text-left  text-base/6 text-neutral-200">
+                            Bring the luxury of the Caribbean to your backyard with our custom-designed pools. Discover the elegance and quality that only Caribbean Pools can offer.
+                        </p>
                     </div>
-                    <div className="group overflow-hidden rounded-lg shadow-md transition-all hover:scale-[1.02] hover:shadow-lg">
-                        <Link className="block" href="https://caribbeanpools.net.au/">
-                            <div className="relative">
-                                <img
-                                    alt="Caribbean Pools"
-                                    className="w-full h-40 object-cover"
-                                    height={400}
-                                    src="https://caribbeanpools.net.au/wp-content/uploads/2024/03/Caribbean-pool-logo-1-1536x625-removebg-preview-1.png"
-                                    style={{
-                                        aspectRatio: "600/400",
-                                        objectFit: "scale-down",
-                                    }}
-                                    width={600}
-                                />
-                                <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                                    <div className="text-white text-2xl font-bold">Caribbean Pools</div>
-                                </div>
-                            </div>
-                            <div className="p-4 bg-white dark:bg-black">
-                                <h3 className="text-lg font-semibold group-hover:underline">Caribbean Pools</h3>
-                                <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">Elevate Your Home with a Bespoke Caribbean Pool</p>
-                                <div className="mt-4">
-                                    <Link
-                                        className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
-                                        href="https://caribbeanpools.net.au/"
-                                    >
-                                        View Project
-                                        <ArrowRightIcon className="w-4 h-4" />
-                                    </Link>
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
-                    <div className="group overflow-hidden rounded-lg shadow-md transition-all hover:scale-[1.02] hover:shadow-lg">
-                        <Link className="block" href="https://wordpress-405916-4532643.cloudwaysapps.com/">
-                            <div className="relative">
-                                <img
-                                    alt="Oak Tree Industrial"
-                                    className="w-full h-40 object-cover"
-                                    height={400}
-                                    src="https://wordpress-405916-4532643.cloudwaysapps.com/wp-content/uploads/2024/05/LOGO_CORRECT-removebg-preview.png"
-                                    style={{
-                                        aspectRatio: "600/400",
-                                        objectFit: "scale-down",
-                                    }}
-                                    width={600}
-                                />
-                                <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-                                    <div className="text-white text-2xl font-bold">View Project</div>
-                                </div>
-                            </div>
-                            <div className="p-4 bg-white dark:bg-black">
-                                <h3 className="text-lg font-semibold group-hover:underline">Oak Tree Industrial</h3>
-                                <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">Unlock the Potential of Strategic Industrial Space at Oak Tree Industrial Estate</p>
-                                <div className="mt-4">
-                                    <Link
-                                        className="inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline"
-                                        href="https://wordpress-405916-4532643.cloudwaysapps.com/"
-                                    >
-                                        View Project
-                                        <ArrowRightIcon className="w-4 h-4" />
-                                    </Link>
-                                </div>
-                            </div>
-                        </Link>
-                    </div>
-                </div>
+                    <img
+                        src="/img/caribbean.png"
+                        width={500}
+                        height={500}
+                        alt="Caribbean Pools Image"
+                        className="absolute -right-10 md:-right-[40%] lg:-right-[10%] -bottom-20    object-contain rounded-2xl"
+                    />
+                </WobbleCard>
             </div>
         </section>
-    )
-}
-
-function ArrowRightIcon(props: any) {
-    return (
-        <svg
-            {...props}
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-        >
-            <path d="M5 12h14" />
-            <path d="m12 5 7 7-7 7" />
-        </svg>
     )
 }
