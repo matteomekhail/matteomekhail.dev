@@ -421,6 +421,8 @@ function Hero() {
                                 Get In Touch
                             </Link>
                         </div>
+                            <p className='text-gray-500 md:text-xl dark:text-gray-400'>From all over the world! ↓</p>
+
                     </div>
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                         <div style={{ height: '350px', display: 'inline-block' }}>
